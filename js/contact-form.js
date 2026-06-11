@@ -186,7 +186,7 @@
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/linkzama12@gmail.com",
+        "https://formsubmit.co/ajax/Linkzama12@gmail.com",
         {
           method: "POST",
           headers: { Accept: "application/json" },
