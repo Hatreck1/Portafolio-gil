@@ -1,0 +1,5 @@
+blanco #FBFAFA
+negro #212529
+verde #00684A
+verde claro #86DEAB
+verde oscuro #001E2B

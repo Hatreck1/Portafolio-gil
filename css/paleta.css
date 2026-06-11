@@ -1,0 +1,20 @@
+:root {
+  --blanco: #fbfafa;
+  --negro: #212529;
+  --verde: #00684a;
+  --verde-claro: #86deab;
+  --verde-oscuro: #001e2b;
+
+  /*acercade mi*/
+  --texto: #212529;
+  --bg-claro: #fbfafa;
+  --azul-oscuro: #001e2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  /*outline: 1px solid red;*/
+}

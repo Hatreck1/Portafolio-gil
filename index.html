@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Gilberto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/nabvar.css" />
+    <link rel="stylesheet" href="css/paleta.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/acercademi.css" />
+    <link rel="stylesheet" href="css/proyectos.css" />
+    <link rel="stylesheet" href="css/certificados.css" />
+    <link rel="stylesheet" href="css/contacto-form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/logo/logo-gil-negro.svg" class="logo-nav" alt="" />
+      </div>
+
+      <!-- Hamburger -->
+      <div class="nav-hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#inicio" data-es="Inicio" data-en="Home" class="active"
+          >Inicio</a
+        >
+        <a href="#about" data-es="Sobre mí" data-en="About me">Sobre mí</a>
+        <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+        <a href="#certificados" data-es="Certificados" data-en="Certificates"
+          >Certificados</a
+        >
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      </div>
+
+      <span
+        class="lang-btn"
+        id="btnIdioma"
+        role="button"
+        aria-label="Cambiar idioma"
+      >
+        <span class="lb-bracket" aria-hidden="true">[</span>
+        <span class="lb-center">
+          <span class="lb-lang-row">
+            <span class="lb-lang" id="langText">ES</span>
+            <span class="lb-cursor" aria-hidden="true"></span>
+          </span>
+        </span>
+        <span class="lb-bracket" aria-hidden="true">]</span>
+        <span class="lb-switch-hint" aria-hidden="true"></span>
+      </span>
+    </nav>
+
+    <!-- ═══════════════════════════ INICIO ════════════════════════════════ -->
+
+    <section class="hero" id="inicio">
+      <div class="img-hero-inicio">
+        <video
+          src="images/video/video-inicio.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          style="
+            width: 100%;
+            height: 500px;
+            left: 0;
+            top: 0;
+            position: absolute;
+            object-fit: cover;
+          "
+        ></video>
+        <div
+          style="
+            width: 100%;
+            height: 500px;
+            left: 0px;
+            position: absolute;
+            background: linear-gradient(
+              180deg,
+              var(--Verde-oscuro, #001e2b) 0%,
+              rgba(65.78, 124.22, 105.9, 0.54) 62%,
+              rgba(134.14, 222.14, 171.27, 0.07) 100%
+            );
+          "
+        ></div>
+      </div>
+
+      <div class="grupo-contacto-scroll">
+        <!-- Botones de contacto -->
+        <div class="contacto">
+          <div class="button-container">
+            <!-- GitHub -->
+            <a
+              href="https://github.com/Hatreck1"
+              class="btn-contacto flex-center"
+            >
+              <svg
+                viewBox="0 0 20 20"
+                width="22px"
+                class="btn-svg"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                stroke="#fff"
+              >
+                <g id="SVGRepo_iconCarrier">
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -7559.000000)"
+                      fill="#fff"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/gilberto-lizama-028952328/"
+              class="btn-contacto flex-center"
+            >
+              <svg
+                width="22px"
+                fill="#fff"
+                class="btn-svg"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Linkedln">
+                  <path
+                    d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85ZM17,14.7a.05.05,0,0,1,.06-.06v.06Z"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- Correo -->
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Linkzama12@gmail.com"
+              class="btn-contacto flex-center"
+            >
+              <svg
+                width="22px"
+                fill="#fff"
+                class="btn-svg"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="style=fill">
+                  <g id="email">
+                    <path
+                      id="Subtract"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7 2.75C5.38503 2.75 3.92465 3.15363 2.86466 4.1379C1.79462 5.13152 1.25 6.60705 1.25 8.5V15.5C1.25 17.393 1.79462 18.8685 2.86466 19.8621C3.92465 20.8464 5.38503 21.25 7 21.25H17C18.615 21.25 20.0754 20.8464 21.1353 19.8621C22.2054 18.8685 22.75 17.393 22.75 15.5V8.5C22.75 6.60705 22.2054 5.13152 21.1353 4.1379C20.0754 3.15363 18.615 2.75 17 2.75H7ZM19.2285 8.3623C19.5562 8.10904 19.6166 7.63802 19.3633 7.31026C19.1101 6.98249 18.6391 6.9221 18.3113 7.17537L12.7642 11.4616C12.3141 11.8095 11.6858 11.8095 11.2356 11.4616L5.6886 7.17537C5.36083 6.9221 4.88982 6.98249 4.63655 7.31026C4.38328 7.63802 4.44367 8.10904 4.77144 8.3623L10.3185 12.6486C11.3089 13.4138 12.691 13.4138 13.6814 12.6486L19.2285 8.3623Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- scroll-->
+        <div class="scroll">
+          <div class="scroll-box"></div>
+          <span
+            data-es="Desliza para ver más"
+            data-en="Swipe to see more"
+          ></span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="contenido-hero">
+          <h1>Gilberto Lizama</h1>
+          <h2
+            data-es="Estudiante de Ingeniería en Sistemas y Redes Informáticas"
+            data-en="Student of Computer Systems and Networks Engineering"
+          ></h2>
+        </div>
+      </div>
+
+      <div class="box-linea">
+        <div
+          class="quote-box"
+          data-es="Trabaja en tu sistema, Luego tu sistema trabajará para ti"
+          data-en="Work on your system, then your system will work for you."
+        ></div>
+
+        <div class="btn-outline"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SOBRE MI ══════════════════════════════ -->
+
+    <section class="about" id="about">
+      <div
+        class="about-role"
+        data-es="Desarrollador de Software Junior"
+        data-en="Junior Software Developer"
+      ></div>
+
+      <div class="about-container">
+        <div class="about-left">
+          <div class="photo-wrapper">
+            <div class="line-numbers">
+              <span>01</span><span>02</span><span>03</span> <span>04</span
+              ><span>05</span><span>06</span>
+            </div>
+
+            <div class="deco-line-v"></div>
+            <div class="photo-bg-offset"></div>
+
+            <div class="photo-frame">
+              <div class="photo-frame-inner"></div>
+
+              <div class="about-card">
+                <img
+                  src="images/gil-u-foto-profesional.jpg"
+                  alt="Foto de perfil"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-cv-wrap">
+            <a id="btnCV" class="btn-cv" download>
+              <button class="btndcv">
+                <svg
+                  id="svg-cv"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.29 17.29 13 18.59V13a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 .33.21.94.94 0 0 0 .76 0 1 1 0 0 0 .33-.21l3-3a1 1 0 0 0-1.42-1.42m4.13-11.07A7 7 0 0 0 5.06 8.11 4 4 0 0 0 6 16a1 1 0 0 0 0-2 2 2 0 0 1 0-4 1 1 0 0 0 1-1 5 5 0 0 1 9.73-1.61 1 1 0 0 0 .78.67 3 3 0 0 1 .24 5.84 1 1 0 1 0 .5 1.94 5 5 0 0 0 .17-9.62"
+                  />
+                </svg>
+                <span
+                  class="btn-txt"
+                  data-es="Descargar CV"
+                  data-en="Download CV"
+                  >Descargar CV</span
+                >
+                <div class="dot pulse"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2 data-es="Sobre mí" data-en="About me"></h2>
+
+          <p
+            data-es="Soy estudiante de Ingeniería en Sistemas y Redes Informáticas, con enfoque en
+                bases de datos y desarrollo backend. Me interesa construir soluciones eficientes,
+                estructuradas y escalables, asegurando que la lógica del sistema y la gestión de
+                la información funcionen de manera óptima."
+            data-en="I am a student of Computer Systems and Networks Engineering, specializing in databases and backend development.
+                 I am interested in building efficient, structured, and scalable solutions, ensuring that the system logic and information
+                 management function optimally."
+          ></p>
+
+          <p
+            data-es="Me enfoco en escribir código limpio, mantener buenas prácticas y seguir una lógica
+                clara en cada proyecto. Mi objetivo es fortalecer mis habilidades técnicas y
+                adaptarme a nuevas tecnologías para aportar valor real a los equipos de desarrollo
+                y a los proyectos en los que participo."
+            data-en="I focus on writing clean code, maintaining good practices, and following clear logic in every project.
+                My goal is to strengthen my technical skills and
+                adapt to new technologies to add real value to development teams and the projects I work on."
+          ></p>
+
+          <div class="idiomas">
+            <h3 data-es="Idiomas" data-en="Languages"></h3>
+            <span data-es="Español nativo" data-en="Native Spanish"></span>
+            <span data-es="Inglés B2" data-en="English B2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-extra">
+      <div class="info-card" id="historia">
+        <div
+          class="info-title"
+          data-es="Historia Académica"
+          data-en="Academic History"
+        ></div>
+        <p
+          data-es="He participado como Scrum Master en el proyecto Veganimo, fortaleciendo mis habilidades
+            de organización, liderazgo y trabajo colaborativo dentro de equipos de desarrollo.
+            Además, en el área de bases de datos he realizado proyectos académicos utilizando
+            MongoDB y tecnologías NoSQL, lo que me ha permitido ampliar mis conocimientos en el
+            manejo de datos no relacionales. También he desarrollado proyectos de programación
+            como Lizama Car, una página web orientada a la compraventa de carros, en la que puse
+            en práctica conocimientos de desarrollo web y estructuración de sistemas."
+          data-en="I participated as a Scrum Master in the Veganimo project, strengthening my skills in organization,
+             leadership, and collaborative work within development teams.
+            In addition, in the area of databases, I have carried out academic projects using MongoDB and NoSQL technologies,
+            which has allowed me to expand my knowledge in the management of non-relational data. I have also developed programming projects such as Lizama Car,
+             a website focused on buying and selling cars, in which I put into practice my knowledge of web development and systems structuring."
+        ></p>
+      </div>
+
+      <div class="info-card">
+        <div
+          class="info-title"
+          data-es="Intereses Personales"
+          data-en="Personal Interests"
+        ></div>
+        <p
+          data-es="Mis intereses profesionales están orientados al crecimiento dentro del área del
+            desarrollo de software, con la meta de convertirme en un Programador Senior. Busco
+            especializarme cada vez más en backend, bases de datos y arquitectura de sistemas,
+            aportando soluciones sólidas, escalables y de valor real a los equipos y proyectos
+            en los que participe."
+          data-en="My professional interests are geared towards growth within the area of software development,
+             with the goal of becoming a Senior Programmer. I seek to further specialize in backend development,
+            databases, and systems architecture, contributing robust, scalable, and valuable solutions to the teams and projects
+             I participate in."
+        ></p>
+      </div>
+    </section>
+
+    <section class="skills-section" id="habilidades">
+      <div class="skills-top">
+        <h2 data-es="Habilidades Técnicas" data-en="Technical Skills"></h2>
+
+        <div class="skills-row">
+          <div
+            class="skills-label"
+            data-es="Lenguajes de programación"
+            data-en="Programming languages"
+          ></div>
+          <div class="skills-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">PHP</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div
+            class="skills-label"
+            data-es="Base de datos"
+            data-en="Database"
+          ></div>
+          <div class="skills-tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-bottom">
+        <h2 data-es="Habilidades Blandas" data-en="Soft Skills"></h2>
+
+        <div class="soft-tags">
+          <div class="soft-row">
+            <span
+              class="tag"
+              data-es="Pensamiento analítico"
+              data-en="Analytical thinking"
+            ></span>
+            <span
+              class="tag"
+              data-es="Trabajo en equipo en entornos colaborativos"
+              data-en="Teamwork in collaborative environments"
+            ></span>
+          </div>
+
+          <div class="soft-row">
+            <span
+              class="tag"
+              data-es="Liderazgo y coordinación de equipos mediante metodologías ágiles (SCRUM)"
+              data-en="Leadership and coordination of teams using agile methodologies (SCRUM)"
+            ></span>
+            <span
+              class="tag"
+              data-es="Adaptabilidad"
+              data-en="Adaptability"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROYECTOS ═════════════════════════════ -->
+
+    <section class="proyectos" id="projects">
+      <div class="certificados-header">
+        <h2 data-es="Proyectos" data-en="Projects"></h2>
+      </div>
+
+      <div class="proyectos-grid">
+        <a href="proyectos/veganimo/veganimo.html" class="proyecto-card grande">
+          <img
+            src="proyectos/veganimo/veganimo.png"
+            class="proyecto-img-placeholder"
+            alt="Vegánimo"
+          />
+          <span
+            class="etiqueta"
+            data-es="Vegánimo - Scrum Master"
+            data-en="Veganimo - Scrum Master"
+          ></span>
+        </a>
+
+        <a href="proyectos/lizama-car/lizama-car.html" class="proyecto-card">
+          <img
+            src="proyectos/lizama-car/car1.jpg"
+            class="proyecto-img-placeholder"
+            alt="Lizama Car"
+          />
+          <span
+            class="etiqueta"
+            data-es="Lizama Car - Full Stack"
+            data-en="Lizama Car - Full Stack"
+          ></span>
+        </a>
+
+        <a
+          href="proyectos/consolexpress/consolexpress.html"
+          class="proyecto-card"
+        >
+          <img
+            src="proyectos/consolexpress/img-console-carrito.png"
+            class="proyecto-img-placeholder"
+            alt="ConsoleXpress"
+          />
+          <span
+            class="etiqueta"
+            data-es="ConsoleXpress - BD"
+            data-en="ConsoleXpress - DB"
+          ></span>
+        </a>
+
+        <a
+          href="proyectos/contabilidad/contabilidad.html"
+          class="proyecto-card"
+        >
+          <img
+            src="proyectos/contabilidad/cont1.jpg"
+            class="proyecto-img-placeholder"
+            alt="Contabilidad"
+          />
+          <span
+            class="etiqueta"
+            data-es="Contabilidad - Full Stack"
+            data-en="Accounting - Full Stack"
+          ></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CERTIFICADOS ══════════════════════════ -->
+    <section class="certificados" id="certificados">
+      <div class="certificados-header">
+        <h2 data-es="Certificados" data-en="Certificates">Certificados</h2>
+      </div>
+
+      <div class="certificados-grid">
+        <!-- Certificado 1 -->
+        <article
+          class="cert-card"
+          onclick="
+            window.open(
+              'certificados/_certificate_linkzama12-gmail-com.pdf',
+              '_blank',
+            )
+          "
+        >
+          <div class="cert-pdf-preview">
+            <iframe
+              src="certificados/_certificate_linkzama12-gmail-com.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              title="Vista previa certificado"
+              tabindex="-1"
+            ></iframe>
+            <div class="cert-pdf-overlay">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              <span data-es="Ver certificado" data-en="View certificate"
+                >Ver certificado</span
+              >
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge">Networking</div>
+            <div
+              class="cert-title"
+              data-es="Certificado Digital"
+              data-en="Digital Certificate"
+            >
+              Certificado Digital
+            </div>
+            <div class="cert-issuer">linkzama12</div>
+            <div class="cert-year">2024</div>
+          </div>
+        </article>
+
+        <!-- Certificado 2 -->
+        <article
+          class="cert-card"
+          onclick="
+            window.open(
+              'certificados/CCNA_Switching_Routing_and_Wireless_Essentials_certificate_linkzama12-gmail-com.pdf',
+              '_blank',
+            )
+          "
+        >
+          <div class="cert-pdf-preview">
+            <iframe
+              src="certificados/CCNA_Switching_Routing_and_Wireless_Essentials_certificate_linkzama12-gmail-com.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              title="Vista previa CCNA"
+              tabindex="-1"
+            ></iframe>
+            <div class="cert-pdf-overlay">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              <span data-es="Ver certificado" data-en="View certificate"
+                >Ver certificado</span
+              >
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge">CCNA</div>
+            <div
+              class="cert-title"
+              data-es="Switching, Routing &amp; Wireless Essentials"
+              data-en="Switching, Routing &amp; Wireless Essentials"
+            >
+              Switching, Routing &amp; Wireless Essentials
+            </div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-year">2024</div>
+          </div>
+        </article>
+
+        <!-- Certificado 3 -->
+        <article
+          class="cert-card"
+          onclick="
+            window.open('certificados/diploma-flisol-gilberto.pdf', '_blank')
+          "
+        >
+          <div class="cert-pdf-preview">
+            <iframe
+              src="certificados/diploma-flisol-gilberto.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              title="Vista previa diploma FLISOL"
+              tabindex="-1"
+            ></iframe>
+            <div class="cert-pdf-overlay">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              <span data-es="Ver certificado" data-en="View certificate"
+                >Ver certificado</span
+              >
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge">Linux</div>
+            <div
+              class="cert-title"
+              data-es="Diploma FLISOL"
+              data-en="FLISOL Diploma"
+            >
+              Diploma FLISOL
+            </div>
+            <div class="cert-issuer">FLISOL</div>
+            <div class="cert-year">2024</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACTO ══════════════════════════════ -->
+    <section class="contacto- contacto-section" id="contacto">
+      <div class="contacto-inner">
+        <div class="contacto-info">
+          <h2
+            class="contacto-titulo"
+            data-es="Convirtamos tu idea en <span>software</span>"
+            data-en="Lets turn your idea into <span>software</span>"
+          >
+            Hablemos <span>juntos</span>
+          </h2>
+          <div class="contacto-linea"></div>
+          <p
+            class="contacto-desc"
+            data-es="Transformo ideas en soluciones digitales eficientes. Si tienes un proyecto en mente o buscas colaboración, estaré encantado de ayudarte."
+            data-en="I transform ideas into efficient digital solutions. If you have a project in mind or are looking for collaboration, I'd be happy to help."
+          ></p>
+          <div class="contacto-datos">
+            <div class="dato-item">
+              <div class="dato-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <a href="mailto:Linkzama12@gmail.com">Linkzama12@gmail.com</a>
+            </div>
+            <div class="dato-item">
+              <div class="dato-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <span data-es="El Salvador" data-en="El Salvador"
+                >El Salvador</span
+              >
+            </div>
+            <div class="dato-item">
+              <div class="dato-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 11l3 3 8-8" />
+                  <path
+                    d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+                  />
+                </svg>
+              </div>
+              <span
+                data-es="Desarrollador de Software"
+                data-en="Software Developer"
+                >Desarrollador de Software</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto-form-wrap">
+          <!-- ✅ Sin action ni method: el fetch del JS lo maneja todo -->
+          <form id="contactoForm" novalidate autocomplete="off">
+            <input
+              class="campo-trampa"
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" data-es="Nombre *" data-en="Name *">
+                  Nombre <span class="req">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  data-placeholder-es="Tu nombre"
+                  data-placeholder-en="Your name"
+                  maxlength="60"
+                  autocomplete="given-name"
+                  required
+                />
+                <span class="campo-error" id="err-nombre"
+                  >Ingresa tu nombre (solo letras).</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="apellido" data-es="Apellido" data-en="Last name"
+                  >Apellido</label
+                >
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Tu apellido"
+                  data-placeholder-es="Tu apellido"
+                  data-placeholder-en="Your last name"
+                  maxlength="60"
+                  autocomplete="family-name"
+                />
+                <span class="campo-error" id="err-apellido"
+                  >Solo se permiten letras y espacios.</span
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label
+                for="email"
+                data-es="Correo electrónico *"
+                data-en="Email *"
+              >
+                Correo electrónico <span class="req">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="correo@ejemplo.com"
+                data-placeholder-es="correo@ejemplo.com"
+                data-placeholder-en="email@example.com"
+                maxlength="100"
+                autocomplete="email"
+                required
+              />
+              <span class="campo-error" id="err-email"
+                >Ingresa un correo válido.</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="asunto" data-es="Asunto *" data-en="Subject *">
+                Asunto <span class="req">*</span>
+              </label>
+              <select id="asunto" name="asunto" required>
+                <option
+                  value=""
+                  data-es="— Selecciona un asunto —"
+                  data-en="— Select a subject —"
+                >
+                  — Selecciona un asunto —
+                </option>
+                <option
+                  value="Propuesta de trabajo"
+                  data-es="Propuesta de trabajo"
+                  data-en="Job proposal"
+                >
+                  Propuesta de trabajo
+                </option>
+                <option
+                  value="Proyecto freelance"
+                  data-es="Proyecto freelance"
+                  data-en="Freelance project"
+                >
+                  Proyecto freelance
+                </option>
+                <option
+                  value="Colaboración"
+                  data-es="Colaboración"
+                  data-en="Collaboration"
+                >
+                  Colaboración
+                </option>
+                <option
+                  value="Consulta general"
+                  data-es="Consulta general"
+                  data-en="General inquiry"
+                >
+                  Consulta general
+                </option>
+                <option value="Otro" data-es="Otro" data-en="Other">
+                  Otro
+                </option>
+              </select>
+              <span class="campo-error" id="err-asunto"
+                >Por favor selecciona un asunto.</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" data-es="Mensaje *" data-en="Message *">
+                Mensaje <span class="req">*</span>
+              </label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Cuéntame sobre tu proyecto o consulta..."
+                data-placeholder-es="Cuéntame sobre tu proyecto o consulta..."
+                data-placeholder-en="Tell me about your project or inquiry..."
+                maxlength="800"
+                required
+              ></textarea>
+              <div class="char-count"><span id="charCount">0</span> / 800</div>
+              <span class="campo-error" id="err-mensaje"
+                >El mensaje debe tener entre 10 y 800 caracteres.</span
+              >
+            </div>
+
+            <div class="check-group">
+              <input type="checkbox" id="politica" name="politica" required />
+              <label
+                for="politica"
+                data-es="He leído y acepto que mis datos serán utilizados únicamente para responder a este mensaje, sin fines comerciales ni compartidos con terceros."
+                data-en="I have read and accept that my data will only be used to respond to this message, without commercial purposes or sharing with third parties."
+              >
+                He leído y acepto que mis datos serán utilizados únicamente para
+                responder a este mensaje, sin fines comerciales ni compartidos
+                con terceros.
+              </label>
+            </div>
+            <span class="campo-error" id="err-politica"
+              >Debes aceptar la política de privacidad.</span
+            >
+
+            <button type="submit" class="btn-enviar" id="btnEnviar">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              <span id="btnTxt" data-es="Enviar mensaje" data-en="Send message"
+                >Enviar mensaje</span
+              >
+            </button>
+
+            <!-- ✅ Elemento nuevo requerido por el JS para mostrar errores de red -->
+            <span class="campo-error" id="formErrorMsg">
+              Hubo un error al enviar. Por favor intenta de nuevo.
+            </span>
+          </form>
+
+          <div
+            class="form-success"
+            id="formSuccess"
+            role="alert"
+            aria-live="polite"
+          >
+            <div class="success-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            </div>
+            <h4 data-es="¡Mensaje enviado!" data-en="Message sent!">
+              ¡Mensaje enviado!
+            </h4>
+            <p
+              data-es="Gracias por escribirme. Te responderé al correo indicado a la brevedad posible."
+              data-en="Thanks for writing. I'll reply to your email as soon as possible."
+            >
+              Gracias por escribirme. Te responderé al correo indicado a la
+              brevedad posible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ════════════════════════════════ -->
+
+    <footer class="footer-site">
+      <div class="footer-top">
+        <div class="footer-decoration">
+          <canvas id="triforce-canvas"></canvas>
+        </div>
+
+        <div class="footer-logo">
+          <img
+            src="images/logo/logo-gil-blanco.svg"
+            alt=""
+            class="logo-footer"
+          />
+          <span
+            ><br />Si deseas contactarme para oportunidades, proyectos
+            académicos o colaboraciones, puedes hacerlo a través de:</span
+          >
+        </div>
+
+        <div class="footer-socials">
+          <a
+            href="https://github.com/Hatreck1"
+            target="_blank"
+            class="social-icon github"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              width="22px"
+              class="btn-svg"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              stroke="#fff"
+            >
+              <g id="SVGRepo_iconCarrier">
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7559.000000)"
+                    fill="#fff"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gilberto-lizama-028952328/"
+            target="_blank"
+            class="social-icon linkedin"
+          >
+            <svg
+              width="22px"
+              fill="#fff"
+              class="btn-svg"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Linkedln">
+                <path
+                  d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85Z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=Linkzama12@gmail.com"
+            class="social-icon email"
+          >
+            <svg
+              width="22px"
+              fill="#fff"
+              class="btn-svg"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="style=fill">
+                <g id="email">
+                  <path
+                    id="Subtract"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 2.75C5.38503 2.75 3.92465 3.15363 2.86466 4.1379C1.79462 5.13152 1.25 6.60705 1.25 8.5V15.5C1.25 17.393 1.79462 18.8685 2.86466 19.8621C3.92465 20.8464 5.38503 21.25 7 21.25H17C18.615 21.25 20.0754 20.8464 21.1353 19.8621C22.2054 18.8685 22.75 17.393 22.75 15.5V8.5C22.75 6.60705 22.2054 5.13152 21.1353 4.1379C20.0754 3.15363 18.615 2.75 17 2.75H7ZM19.2285 8.3623C19.5562 8.10904 19.6166 7.63802 19.3633 7.31026C19.1101 6.98249 18.6391 6.9221 18.3113 7.17537L12.7642 11.4616C12.3141 11.8095 11.6858 11.8095 11.2356 11.4616L5.6886 7.17537C5.36083 6.9221 4.88982 6.98249 4.63655 7.31026C4.38328 7.63802 4.44367 8.10904 4.77144 8.3623L10.3185 12.6486C11.3089 13.4138 12.691 13.4138 13.6814 12.6486L19.2285 8.3623Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="footer-bottom">
+        <p>Copyright © 2024. Derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script id="vtx" type="x-shader/x-vertex">
+      void main(){ gl_Position = vec4(position, 1.0); }
+    </script>
+
+    <script id="frg" type="x-shader/x-fragment">
+                  uniform vec2 u_res;
+                  uniform vec2 u_mouse;
+                  uniform float u_time;
+                  uniform sampler2D u_noise;
+                  uniform bool u_moved;
+
+                  const bool shapeTest = false; // Whether to just show the shape test
+              const bool addNoise = true; // Whether to add noise to the rays
+              const float decay = .98; // the amount to decay each sample by
+              const float exposure = .1; // the screen exposure
+              const vec3 lightcolour = vec3(2.2, 2.2, 1.0); // the colour of the light
+              const vec3 falloffcolour = vec3(1.0, 1.0, 1.3); // the colour of the falloff
+              const vec3 bgcolour = vec3(0.129, 0.145, 0.161); // the base colour of the render
+              const float falloff = .5;
+              const int samples = 16; // The number of samples to take
+              const float density = .95; // The density of the "smoke"
+              const float weight = .25; // how heavily to apply each step of the supersample
+              const int octaves = 1; // the number of octaves to generate in the FBM noise
+              const float seed = 43758.5453123; // A random seed :)
+
+              #define TAU 6.28318531
+              float starSDF(vec2 st, int V, float s) {
+                  // st = st*4.-2.;
+                  float a = atan(st.y, st.x)/TAU;
+                  float seg = a * float(V);
+                  a = ((floor(seg) + 0.5)/float(V) +
+                      mix(s,-s,step(.5,fract(seg))))
+                      * TAU;
+                  return abs(dot(vec2(cos(a),sin(a)),
+                                 st));
+              }
+
+              float random2d(vec2 uv) {
+                uv /= 256.;
+                vec4 tex = texture2D(u_noise, uv, 0.);
+                return mix(tex.x, tex.y, tex.a);
+              }
+              vec2 random2(vec2 st, float seed){
+                  st = vec2( dot(st,vec2(127.1,311.7)),
+                            dot(st,vec2(269.5,183.3)) );
+                  return -1.0 + 2.0*fract(sin(st)*seed);
+              }
+
+              // Value Noise by Inigo Quilez - iq/2013
+              // https://www.shadertoy.com/view/lsf3WH
+              float noise(vec2 st, float seed) {
+                vec3 x = vec3(st, 1.);
+                vec3 p = floor(x);
+                vec3 f = fract(x);
+                f = f*f*(3.0-2.0*f);
+                vec2 uv = (p.xy+vec2(37.0,17.0)*p.z) + f.xy;
+                vec2 rg = texture2D(u_noise, (uv+0.5) / 256., 0.).yx - .5;
+                return mix( rg.x, rg.y, f.z );
+              }
+
+              float fbm1(in vec2 _st, float seed) {
+                float v = 0.0;
+                float a = 0.5;
+                vec2 shift = vec2(100.0);
+                // Rotate to reduce axial bias
+                mat2 rot = mat2(cos(0.5), sin(0.5),
+                                -sin(0.5), cos(0.50));
+                for (int i = 0; i < octaves; ++i) {
+                    v += a * noise(_st, seed);
+                    _st = rot * _st * 2.0 + shift;
+                    a *= 0.4;
+                }
+                return v + .4;
+              }
+
+              float pattern(vec2 uv, float seed, float time, inout vec2 q, inout vec2 r) {
+
+                q = vec2( fbm1( uv + vec2(0.0,0.0), seed ),
+                               fbm1( uv + vec2(5.2,1.3), seed ) );
+
+                r = vec2( fbm1( uv + 4.0*q + vec2(1.7 - time / 2.,9.2), seed ),
+                               fbm1( uv + 4.0*q + vec2(8.3 - time / 2.,2.8), seed ) );
+
+                float rtn = fbm1( uv + 4.0*r, seed );
+
+                return rtn;
+              }
+
+              float tri(vec2 uv) {
+                uv = (uv * 2.-1.)*2.;
+                return max(abs(uv.x) * 0.866025 + uv.y * 0.5, -uv.y * 0.5);
+              }
+
+              float shapes(vec2 uv) {
+
+                if(!shapeTest) {
+                  uv += vec2(.5,-.1);
+
+                  float shape = 0.;
+                  shape = smoothstep(0.9, 0.89, tri(uv));
+                  shape += smoothstep(0.9, 0.89, tri(uv + vec2(.515, .89)));
+                  shape += smoothstep(0.9, 0.89, tri(uv + vec2(-.515, .89)));
+
+                  return 1. - shape;
+                } else {
+                  uv *= 1.5;
+
+                  uv.x += u_time / 10.;
+                  uv += vec2(100.);
+                  vec2 grid = floor(uv);
+                  uv = fract(uv) - .5;
+                  float rand = random2d(grid) * 13. - 4.;
+                  float id = floor(rand);
+
+                  if(id == 0.) {
+                    float scale = (sin((u_time) / 2. + grid.x + grid.y / 10.) + 1.5) * .5 * rand;
+                    // float smooth = (cos(u_time / 2.) + 1.) * .01;
+                    return 1. - smoothstep(0.4 * scale, 0.401 * scale, length(uv));
+                  } else if(id == 2.) {
+                    float t = u_time + rand;
+                    uv *= mat2(cos(t), -sin(t), sin(t), cos(t));
+                    vec2 rect = uv;
+                    return smoothstep(.25, .24, max(abs(rect.x / 1.), abs(rect.y / .5)));
+                  } else if(id == 3.) {
+                    float star = starSDF(uv * 1.5, 3, .5);
+                    return smoothstep(0.09, .1, star) * smoothstep(0.3, .29, star);
+                  } else if(id == 4.) {
+                    float t = u_time + rand;
+                    uv *= mat2(cos(t), -sin(t), sin(t), cos(t));
+                    return 1. - smoothstep(0.19, .2, starSDF(uv * 1.5, 5, .325));
+                  } else if(id == 5.) {
+                    float t = u_time * -1. * rand * .5;
+                    uv *= mat2(cos(t), -sin(t), sin(t), cos(t));
+                    vec2 rect = uv;
+                    return smoothstep(.45, .44, max(abs(rect.x / 1.), abs(rect.y / .5)));
+                  } else if(id == 6.) {
+                    float t = u_time + rand;
+                    uv *= mat2(cos(t), -sin(t), sin(t), cos(t));
+                    float star = starSDF(uv * 1.5, 3, .5);
+                    return smoothstep(0.1, .09 + rand, star);
+                  }
+
+                  return 0.;
+                }
+
+              }
+
+              float occlusion(vec2 uv, vec2 lightpos, float objects) {
+                return (1. - smoothstep(0.0, 3.5, length(lightpos - uv))) * (1. - objects);
+              }
+
+              vec4 mainRender(vec2 uv, inout vec4 fragcolour) {
+
+                float scale = 3.;
+                uv *= scale;
+
+                float exposure = exposure + (sin(u_time) * .5 + 1.) * .05;
+
+                vec2 _uv = uv;
+                vec2 lightpos = u_mouse * scale;
+                lightpos = u_mouse * scale;
+
+                if(!u_moved) {
+                  lightpos.x = cos(u_time * .25) * 0.8;
+                  lightpos.y = sin(u_time * .5) * 0.8;
+                }
+
+                float obj = shapes(uv);
+                float map = occlusion(uv, lightpos, obj);
+                float dither = random2d(uv * 2. * 256. + mod(u_time * 2000., 256.)) * 4. - 2.;
+                // dither = 0.;
+
+                float _pattern = 0.;
+                vec2 q = vec2(0.);
+                vec2 r = vec2(0.);
+                if(addNoise) {
+                  _pattern = pattern(_uv * 2. , seed, u_time, q, r) / 2.;
+                }
+
+                vec2 dtc = (_uv - lightpos) * (1. / float(samples) * density);
+                // dtc += _pattern / 80.;
+                float illumination_decay = 1.;
+                vec3 basecolour = vec3(0.);
+
+                for(int i=0; i<samples; i++) {
+                  _uv -= dtc;
+                  if(addNoise) {
+                    uv += _pattern / 16.;
+                  }
+
+                  float stepped_map = occlusion(uv, lightpos, shapes(_uv+dtc*dither));
+                  stepped_map *= illumination_decay * weight;
+                  illumination_decay *= decay;
+
+                  if(length(basecolour) == 0.) {
+                    vec2 suv = _uv+dtc;
+                    suv /= 1.5;
+                    suv /= 3.;
+                    suv += u_mouse / 15.;
+                    suv += .5;
+                    float lightDist = clamp( 1. - length(lightpos - uv), 0., 1.);
+
+                    basecolour = bgcolour;
+                  }
+
+                  map += stepped_map;
+                }
+
+                float l = length(lightpos - uv);
+
+                vec3 lightcolour = mix(lightcolour, falloffcolour, l*falloff);
+
+                vec3 colour = vec3(basecolour+map*exposure*lightcolour);
+
+                fragcolour = vec4(colour,1.0);
+                return fragcolour;
+              }
+
+           void main() {
+        vec2 uv = (gl_FragCoord.xy - 0.5 * u_res.xy) / u_res.y;
+        mainRender(uv, gl_FragColor);
+      }
+    </script>
+
+    <script src="js/trifuerza.js"></script>
+
+    <script src="js/traductor.js"></script>
+    <script src="js/navegacion.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>

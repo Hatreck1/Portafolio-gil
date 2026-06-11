@@ -1,0 +1,176 @@
+.proyectos {
+  background-color: var(--blanco);
+  padding: 50px 20px;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 2.5rem;
+}
+
+/* Cabecera con borde redondeado similar a la imagen */
+.proyectos-header h2 {
+  display: inline-block;
+  color: var(--verde);
+  border: 4px solid var(--verde-claro);
+  border-radius: 0 25px 25px 0;
+  padding: 10px 40px 10px 20px;
+  margin-left: -20px; /* Alineado al borde de la pantalla */
+  margin-bottom: 40px;
+}
+
+.proyectos-header h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--verde, #00684a);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--verde, #00684a);
+}
+
+.proyectos-header h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--verde, #00684a), transparent);
+  margin-left: 6px;
+}
+
+/* Grid Layout */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hacer que el primer proyecto ocupe las dos columnas */
+.proyecto-card.grande {
+  grid-column: 1 / span 2;
+}
+
+.proyecto-card {
+  position: relative;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 290px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.proyecto-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(0, 30, 43, 0.85) 100%
+  );
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: scale(1.02);
+}
+
+.proyecto-card:hover::before {
+  background: linear-gradient(
+    180deg,
+    transparent 20%,
+    rgba(0, 30, 43, 0.92) 100%
+  );
+}
+
+.proyecto-card.grande {
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Espacio para la imagen */
+.proyecto-img-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee; /* Color base antes de poner fotos */
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Etiqueta flotante inferior derecha */
+.etiqueta {
+  position: relative;
+  z-index: 2;
+  background-color: var(--verde);
+  color: var(--blanco);
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 0;
+  margin: 0px;
+  border-top: 1px solid rgba(134, 222, 171, 0.25);
+  border-left: 1px solid rgba(134, 222, 171, 0.25);
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.etiqueta::before {
+  content: "▸";
+  color: var(--blanco, #49d5ad);
+  font-size: 11px;
+}
+
+.proyecto-card:hover .etiqueta {
+  background: rgba(0, 104, 74, 0.75);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .proyectos {
+    padding: 48px 32px 56px;
+  }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .proyectos {
+    padding: 40px 18px 50px;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .proyecto-card.grande {
+    grid-column: 1;
+    height: 260px;
+  }
+  .proyecto-card {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proyectos {
+    padding: 32px 14px 40px;
+  }
+
+  .proyecto-card {
+    height: 180px;
+  }
+
+  .proyecto-card.grande {
+    height: 220px;
+  }
+}

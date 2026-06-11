@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="stylesheet" href="css/acercademi.css">
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">LOGO</div>
+    <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#about">Sobre mí</a>
+    </div>
+    <div class="lang">ES</div>
+</nav>
+
+<!-- INICIO -->
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>Gilberto Lizama</h1>
+        <h2>Estudiante de Ingeniería en Sistemas y Redes Informáticas</h2>
+
+        <div class="quote-box">
+            Trabaja en tu sistema, Luego tu sistema trabajará para ti
+        </div>
+
+        <div class="btn-outline"></div>
+    </div>
+
+    <div class="dots">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="scroll">
+        <div class="scroll-box"></div>
+        Scroll Down
+    </div>
+</section>
+
+<!-- SOBRE MI -->
+
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-card"></div>
+
+        <div class="about-text">
+            <h2>Sobre mi</h2>
+            <p>
+                Soy estudiante de ingeniería en sistemas con enfoque en bases de datos y desarrollo backend.
+            </p>
+            <p>
+                Me enfoco en escribir código limpio, mantener buenas prácticas y seguir una lógica clara.
+            </p>
+
+            <button class="cv-btn">Descargar CV</button>
+
+            <h3 style="margin-top:30px;">Idiomas</h3>
+            <p>Español nativo &nbsp;&nbsp; Inglés</p>
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="tech">
+        <h2>Habilidades Técnicas</h2>
+        <span class="tag">MongoDB</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Python</span>
+    </div>
+
+    <div class="soft">
+        <h2>Habilidades Blandas</h2>
+        <span class="tag">Comunicación</span>
+        <span class="tag">Trabajo en equipo</span>
+        <span class="tag">Resolución de problemas</span>
+        <span class="tag">Adaptabilidad</span>
+    </div>
+</section>
+
+<section class="softwares">
+    <h2>Softwares</h2>
+
+    <span class="tag">MongoDB</span>
+    <span class="tag">MySQL</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">PHP</span>
+    <span class="tag">Python</span>
+
+    <img src="images/serrvidor1.png" class="server-img">
+</section>
+
+</body>
+</html>

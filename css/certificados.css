@@ -1,0 +1,257 @@
+/* CERTIFICADOS */
+.certificados {
+  background: var(--bg-claro, #fbfafa);
+  padding: 70px 80px 80px;
+  margin-top: 2.5rem;
+}
+
+.certificados-header {
+  margin-bottom: 48px;
+}
+
+.certificados-header h2 {
+  color: var(--verde, #00684a);
+  font-size: 34px;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+}
+
+.certificados-header h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--verde-claro, #86deab);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+}
+
+/* Tarjeta como enlace */
+a.cert-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid rgba(0, 104, 74, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s;
+}
+
+a.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 104, 74, 0.15);
+  border-color: rgba(0, 104, 74, 0.35);
+}
+
+/* Preview imagen */
+.cert-preview {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f0f7f4;
+}
+
+.cert-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.cert-card {
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Preview del PDF */
+.cert-pdf-preview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f4f7f4;
+  border-bottom: 1px solid rgba(0, 104, 74, 0.1);
+}
+
+.cert-pdf-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+/* Overlay con botón al hacer hover */
+.cert-pdf-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 30, 43, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.cert-card:hover .cert-pdf-overlay {
+  opacity: 1;
+}
+
+.cert-pdf-overlay svg {
+  width: 28px;
+  height: 28px;
+  stroke: #fff;
+}
+
+.cert-pdf-overlay span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+/* Cuerpo de la tarjeta */
+.cert-body {
+  padding: 20px 20px 20px 24px;
+  position: relative;
+  flex: 1;
+}
+
+/* Badge reposicionado dentro del body */
+.cert-body .cert-badge {
+  position: static;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.cert-body .cert-title {
+  margin-bottom: 4px;
+}
+
+/* Overlay "Ver certificado" */
+.cert-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cert-overlay svg {
+  width: 28px;
+  height: 28px;
+  stroke: #fff;
+}
+
+a.cert-card:hover .cert-overlay {
+  opacity: 1;
+}
+
+/* Info inferior */
+.cert-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid rgba(0, 104, 74, 0.08);
+}
+
+.cert-badge {
+  display: inline-block;
+  background: rgba(0, 104, 74, 0.1);
+  color: var(--verde, #00684a);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  font-family: "Urbanist", sans-serif;
+  width: fit-content;
+}
+
+.cert-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--texto, #212529);
+  line-height: 1.3;
+}
+
+.cert-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  color: var(--verde, #00684a);
+  font-weight: 600;
+}
+
+.cert-year {
+  font-size: 12px;
+  color: #888;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .certificados {
+    padding: 60px 40px 70px;
+  }
+  .certificados-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .certificados {
+    padding: 48px 22px 56px;
+  }
+  .certificados-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .certificados-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificados {
+    padding: 36px 16px 44px;
+  }
+}
