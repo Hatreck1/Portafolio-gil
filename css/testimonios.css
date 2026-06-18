@@ -1,0 +1,285 @@
+/* ═════════════ TESTIMONIOS ═════════════ */
+.testimonios {
+  position: relative;
+  padding: 120px 80px;
+
+  overflow: hidden;
+  border-top: 2px solid #86deab;
+  border-bottom: 2px solid #1e2a3a;
+}
+
+/* Header con estilo terminal */
+.certificados-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.badge-code {
+  background: #212529;
+  color: #86deab;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+
+  border: 1px solid #86deab;
+  letter-spacing: 0.5px;
+}
+
+.contenedor-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Card estilo "terminal" */
+.card-testimonio {
+  background: #212529;
+  color: #e6edf3;
+  padding: 35px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid #00684a;
+  border-radius: 2px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.card-testimonio::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 2px;
+  padding: 1px;
+  background: linear-gradient(135deg, #00684a33, #86deab33);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-testimonio:hover::before {
+  opacity: 1;
+}
+
+.card-testimonio:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: #00684a;
+  box-shadow: 0 20px 40px -12px #00684a26;
+}
+
+/* Header de card con terminal dots */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.terminal-dots span:nth-child(1) {
+  background: #ff5f56;
+}
+.terminal-dots span:nth-child(2) {
+  background: #ffbd2e;
+}
+.terminal-dots span:nth-child(3) {
+  background: #27c93f;
+}
+
+.card-id {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #001e2b;
+  background: #fbfafa42;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #2a3a4a;
+}
+
+.comillas {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  font-size: 80px;
+  color: #86deab65;
+  line-height: 1;
+}
+
+.texto-testimonio {
+  line-height: 1.9;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  padding-right: 30px;
+  color: var(--blanco);
+  font-weight: 300;
+}
+
+.texto-testimonio::before {
+  content: ">";
+  color: var(--verde-claro);
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
+/* Info del testimonio */
+.info-testimonio {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-top: 1px solid #00684a;
+  padding-top: 20px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-wrapper img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #00684a;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.card-testimonio:hover .avatar-wrapper img {
+  filter: grayscale(0%);
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  background: #27c93f;
+  border-radius: 50%;
+  border: 2px solid #13171d;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+}
+
+.info-testimonio h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #e6edf3;
+  letter-spacing: -0.3px;
+}
+
+.info-testimonio span {
+  font-size: 0.8rem;
+  color: #7b8b9b;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.tech-stack small {
+  background: #1a222a;
+  color: #86deab;
+  padding: 0.1rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.65rem;
+
+  border: 1px solid #86deab;
+  letter-spacing: 0.3px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.card-testimonio:hover .tech-stack small {
+  opacity: 1;
+}
+
+/* Decoración con estilo código */
+.decoracion-testimonios {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.code-symbol {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #212529;
+  text-shadow: 0 0 40px #86deabca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonios {
+    padding: 80px 25px;
+  }
+
+  .certificados-header h2 {
+    font-size: 2rem;
+  }
+
+  .card-testimonio {
+    padding: 25px;
+  }
+
+  .comillas {
+    font-size: 60px;
+    top: 15px;
+    right: 100px;
+  }
+
+  .code-symbol {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificados-header {
+    flex-wrap: wrap;
+  }
+
+  .badge-code {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .info-testimonio {
+    flex-wrap: wrap;
+  }
+}

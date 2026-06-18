@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Gilberto</title>
+    <link rel="icon" href="images/logo/icon-gilberto.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/acercademi.css" />
     <link rel="stylesheet" href="css/proyectos.css" />
     <link rel="stylesheet" href="css/certificados.css" />
+    <link rel="stylesheet" href="css/testimonios.css" />
     <link rel="stylesheet" href="css/contacto-form.css" />
     <link rel="stylesheet" href="css/footer.css" />
   </head>
@@ -42,6 +44,9 @@
         <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
         <a href="#certificados" data-es="Certificados" data-en="Certificates"
           >Certificados</a
+        >
+        <a href="#testimonios" data-es="Testimonios" data-en="Testimonials"
+          >Testimonios</a
         >
         <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
       </div>
@@ -498,12 +503,7 @@
         <!-- Certificado 1 -->
         <article
           class="cert-card"
-          onclick="
-            window.open(
-              'certificados/certificado.pdf',
-              '_blank',
-            )
-          "
+          onclick="window.open('certificados/certificado.pdf', '_blank')"
         >
           <div class="cert-pdf-preview">
             <iframe
@@ -934,6 +934,124 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TESTIMONIOS ══════════════════════════════ -->
+    <section class="testimonios" id="testimonios">
+      <div class="certificados-header">
+        <h2 data-es="Testimonios" data-en="Testimonials"></h2>
+        <span class="badge-code">// feedback</span>
+      </div>
+
+      <div class="contenedor-testimonios">
+        <!-- Testimonio 1 -->
+        <article class="card-testimonio">
+          <div class="card-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-id">01</span>
+          </div>
+
+          <div class="comillas">❝</div>
+
+          <p class="texto-testimonio">
+            Gilberto ha demostrado responsabilidad, compromiso y una gran
+            capacidad para aprender nuevas tecnologías. Su actitud proactiva y
+            disposición para colaborar lo convierten en un profesional con gran
+            potencial.
+          </p>
+
+          <div class="info-testimonio">
+            <div class="avatar-wrapper">
+              <img src="images/testimonios/testimonio1.webp" alt="Persona" />
+              <div class="status-dot"></div>
+            </div>
+
+            <div>
+              <h3>Yaritza Martínez</h3>
+              <span>QA Tester & Educadora Tecnológica</span>
+              <div class="tech-stack">
+                <small>#QA</small>
+                <small>#Educación</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonio 2 -->
+        <article class="card-testimonio">
+          <div class="card-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-id">02</span>
+          </div>
+
+          <div class="comillas">❝</div>
+
+          <p class="texto-testimonio">
+            Destaca por su organización, pensamiento analítico y capacidad para
+            resolver problemas. Siempre busca mejorar sus conocimientos y
+            aportar valor en cada proyecto.
+          </p>
+
+          <div class="info-testimonio">
+            <div class="avatar-wrapper">
+              <img src="images/testimonios/testimonio2.webp" alt="Persona" />
+              <div class="status-dot"></div>
+            </div>
+
+            <div>
+              <h3>Nombre Apellido</h3>
+              <span>Docente Universitario</span>
+              <div class="tech-stack">
+                <small>#Liderazgo</small>
+                <small>#Innovación</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonio 3 -->
+        <article class="card-testimonio">
+          <div class="card-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-id">03</span>
+          </div>
+
+          <div class="comillas">❝</div>
+
+          <p class="texto-testimonio">
+            Durante nuestra colaboración mostró profesionalismo, iniciativa y
+            una excelente comunicación. Es una persona confiable para trabajar
+            en equipo.
+          </p>
+
+          <div class="info-testimonio">
+            <div class="avatar-wrapper">
+              <img src="images/testimonios/testimonio3.webp" alt="Persona" />
+              <div class="status-dot"></div>
+            </div>
+
+            <div>
+              <h3>Nombre Apellido</h3>
+              <span>Cliente Freelance</span>
+              <div class="tech-stack">
+                <small>#Comunicación</small>
+                <small>#Proactivo</small>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Elemento decorativo con estilo código -->
+      <div class="decoracion-testimonios">
+        <span class="code-symbol">{ }</span>
       </div>
     </section>
 

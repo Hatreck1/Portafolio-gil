@@ -1,5 +1,12 @@
 // ─── Secciones disponibles ───────────────────────────────────────────────────
-const SECCIONES = ["inicio", "about", "projects", "certificados", "contacto"];
+const SECCIONES = [
+  "inicio",
+  "about",
+  "projects",
+  "certificados",
+  "testimonios",
+  "contacto",
+];
 
 // Todas las secciones del DOM (excepto footer)
 const seccionesDOM = [
@@ -7,6 +14,7 @@ const seccionesDOM = [
   { id: "about", selector: ".about, .info-extra, .skills-section" },
   { id: "projects", selector: ".proyectos" },
   { id: "certificados", selector: ".certificados" },
+  { id: "testimonios", selector: ".testimonios" },
   { id: "contacto", selector: ".contacto-section" },
 ];
 
